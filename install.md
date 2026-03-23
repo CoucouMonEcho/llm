@@ -20,6 +20,8 @@
 - pip install openai
 - pip install python-dotenv
 - pip install langchain-core
+- pip install -qU langchain-ollama
+- pip install -U ollama
 
 ### 4. 锁定和重安装依赖
 
