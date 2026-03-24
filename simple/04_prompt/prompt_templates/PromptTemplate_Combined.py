@@ -11,13 +11,11 @@ model = init_chat_model(
     reasoning=False
 )
 
-template = PromptTemplate.from_template(
-    "现在时间是：{time}，请根据我的问题给出回答，我的问题是：{question}",
-    partial_variables={"time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")},
-)
-template.partial(question="今天是几月几号")
+template_a = PromptTemplate.from_template("用一句话介绍{topic}，通俗易懂\n")
+template_b = PromptTemplate.from_template("不超过{length}token")
+template = template_a + template_b
 
-prompt = template.format()
+prompt = template.format(topic="LangChain", length=200)
 
 print(prompt)
 
