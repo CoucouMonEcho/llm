@@ -27,3 +27,12 @@
 
 - pip freeze > requirements.txt
 - pip install -r requirements.txt
+
+### 5. RedisStack安装
+
+- docker run -d \
+  --name redis-stack-server \
+  -p 6379:6379 \
+  docker.1ms.run/redis/redis-stack-server
+- docker exec -it redis-stack-server redis-cli
+- pip install redis==5.3.1 (不支持redis8)

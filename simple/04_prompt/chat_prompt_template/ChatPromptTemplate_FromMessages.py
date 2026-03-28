@@ -30,7 +30,7 @@ print(prompt_3)
 print()
 
 # model = init_chat_model(
-#     "deepseek-r1:14b",
+#     "qwen2.5:14b",
 #     model_provider="ollama",
 #     base_url="http://localhost:11434",
 #     reasoning=False

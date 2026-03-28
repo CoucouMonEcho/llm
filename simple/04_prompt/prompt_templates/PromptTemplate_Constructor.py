@@ -11,7 +11,7 @@ prompt = template.format(role="Python开发", question="冒泡排序怎么写，
 print(prompt)
 
 model = init_chat_model(
-    "deepseek-r1:14b",
+    "qwen2.5:14b",
     model_provider="ollama",
     base_url="http://localhost:11434",
     reasoning=False

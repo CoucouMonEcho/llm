@@ -3,7 +3,7 @@ from langchain.chat_models import init_chat_model
 from langchain_core.prompts import ChatPromptTemplate
 
 model = init_chat_model(
-    "deepseek-r1:14b",
+    "qwen2.5:14b",
     model_provider="ollama",
     base_url="http://localhost:11434",
     reasoning=False

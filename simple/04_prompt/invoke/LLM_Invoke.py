@@ -6,7 +6,7 @@ from langchain.messages import SystemMessage, HumanMessage, AIMessage
 
 load_dotenv(encoding='utf-8', override=True)
 model = init_chat_model(
-    "deepseek-r1:14b",
+    "qwen2.5:14b",
     model_provider="ollama",
     base_url="http://localhost:11434",
     reasoning=False

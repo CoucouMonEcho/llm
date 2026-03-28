@@ -2,7 +2,7 @@ from langchain_ollama import ChatOllama
 
 model = ChatOllama(
     base_url="http://localhost:11434",
-    model="deepseek-r1:14b",
+    model="qwen2.5:14b",
     reasoning=False
 )
 

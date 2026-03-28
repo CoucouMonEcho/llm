@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field, field_validator
 from typing_extensions import Self
 
 model = init_chat_model(
-    "deepseek-r1:14b",
+    "qwen2.5:14b",
     model_provider="ollama",
     base_url="http://localhost:11434",
     reasoning=False
