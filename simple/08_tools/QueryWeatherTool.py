@@ -14,7 +14,7 @@ def get_weather(loc):
     查询即时天气函数
     :param loc: 必要参数，字符串类型，用于表示查询天气的具体城市名称。
                 注意，中国的城市需要用对应城市的英文名称代替，例如如果需要查询北京市天气，
-                则 loc 参数需要输入 'beijing'。
+                则 loc 参数需要输入 'Beijing'。
     :return: OpenWeather API 查询即时天气的结果。具体 URL 请求地址为：
              https://api.openweathermap.org/users/sign_in。
              返回结果对象类型为解析之后的 JSON 格式对象，并用字符串形式表示，
