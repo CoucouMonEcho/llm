@@ -7,10 +7,6 @@ from langchain.chat_models import init_chat_model
 from langchain_classic.agents import AgentExecutor, create_openai_tools_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_mcp_adapters.client import MultiServerMCPClient
-from dotenv import load_dotenv
-
-load_dotenv(encoding='utf-8', override=True)
-api_key = os.getenv("OPENWEATHER_API_KEY")
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
