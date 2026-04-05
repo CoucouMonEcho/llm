@@ -87,13 +87,11 @@ def test_no_retry_exception():
         print(f"最终失败: {type(e).__name__}: {e}\n")
 
 
-# 主演示函数
 def run_demo():
     # test_default_retry()
     # test_custom_retry()
     test_no_retry_exception()
 
 
-# 程序入口
 if __name__ == "__main__":
     run_demo()
