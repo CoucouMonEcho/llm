@@ -30,7 +30,7 @@ print(prompt_3)
 print()
 
 # model = init_chat_model(
-#     "qwen2.5:14b",
+#     "qwen3.5:9b",
 #     model_provider="ollama",
 #     base_url="http://localhost:11434",
 #     reasoning=False

@@ -26,7 +26,7 @@ async def run_chat_loop() -> None:
     logger.info(f"已加载  {len(tools)} 个 MCP 工具:{[t.name for t in tools]}")
 
     model = init_chat_model(
-        "qwen2.5:14b",
+        "qwen3.5:9b",
         model_provider="ollama",
         base_url="http://localhost:11434",
         reasoning=False

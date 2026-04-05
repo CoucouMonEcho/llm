@@ -11,7 +11,7 @@ prompt = template.format(role="Python开发", question="冒泡排序怎么写，
 print(prompt)
 
 model = init_chat_model(
-    "qwen2.5:14b",
+    "qwen3.5:9b",
     model_provider="ollama",
     base_url="http://localhost:11434",
     reasoning=False

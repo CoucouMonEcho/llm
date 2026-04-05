@@ -27,7 +27,7 @@ redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True)
 print(redis_client.ping())
 
 model = init_chat_model(
-    "qwen2.5:14b",
+    "qwen3.5:9b",
     model_provider="ollama",
     base_url="http://localhost:11434",
     reasoning=False
